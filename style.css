@@ -1,0 +1,441 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    }
+
+:root{
+  --yellow-color: #FFFF00 ;
+  --yellow-light: #f8f184;
+  --blue-color: #42718bab;
+  --white-color: #fff;
+  --gradient-white: #eddebf67;
+  --gradient-red: #89000978;
+  --black-color: #000000fb;
+  --grey-color:#C4C4C4;
+  --green-color:#B11313;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: SpaceGrotesk;
+    padding: 15px;
+    font-size: 22px;
+}
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 50px 0 10px 150px;
+       
+}
+
+nav ul li a{
+    color: var(--white-color);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+
+}
+li{
+    list-style-type: none;
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+}
+
+.texte{
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 150px;
+}
+
+.scroll{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 45px;
+    top: 300px;
+}
+
+.scroll .social{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#hero .titre{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    width: 60%;
+}
+
+ .flèche{
+    display: block;
+    margin: 0 auto;
+
+    
+}
+
+#hero{
+    background-image: url(./assets/images/illustrations/Bathome1.png);
+    height: 800px;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.content{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 17px ;
+    letter-spacing: 1px;
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    padding: 20px 60px ;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red)
+    ) ;
+    box-shadow: var(--black-color) 15px 15px 80px;
+
+}
+.cta{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+.images{ 
+    display: flex;
+    justify-content: space-between;
+    border-color: rgb(54, 54, 97);
+    padding-right: 55px;
+    }
+
+.sous-titres {
+        font-size: 19px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+#batman-cinema{
+    padding-top: 60px;
+}
+
+#batman-cinema, #némésis, #alliés, #justice-league, #multimedia{
+    margin-top: 40px;
+}
+
+#batman-cinema .titre, #némésis .titre, #alliés .titre, #justice-league .titre, #multimedia .titre{
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+h1 .titre{
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#batman-cinema .description, #némésis .description, #alliés .description, #justice-league .description{
+
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-align: justify;
+    font-family: SpaceGrotesk;
+    width: 80%;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    
+}
+
+#némésis {
+    margin: 0 auto 200px auto;
+}
+
+
+#némésis .Bathome13{
+     position: relative;
+     left: 75px;
+     top: 75px;
+     
+}
+
+.Bathome12 {
+    position: absolute;
+    right: 0;
+    top: 2650px;
+    z-index: -1;
+
+}
+
+#justice-league .container{
+padding-left: 80px;
+padding-bottom: 30px;
+padding-top: 80px;
+}
+
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 55%;
+    margin: 30px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 20px;
+    background-color: #263135;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h3{
+    font-size: 14px;
+    padding: 4px;
+}
+
+#multimedia p{
+    font-size: 12px;
+    font-family: SpaceGrotesk;
+    line-height: 15px;
+    padding: 4px;
+}
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+
+#multimedia .color{
+    color: var(--yellow-color);
+}
+
+.bande-annonce{
+    padding-bottom: 150px;
+    padding-top: 90px;
+}
+
+#contact{
+    background-color: rgb(41, 51, 53);
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 25px 0;
+}
+
+#contact .form input[type='email']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 95%;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .icon {
+    transform: rotate(90deg);
+    width: 20px;
+    padding-left: 10px;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid grey;
+
+}
+
+#contact .newsletter{
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.form input[type='text']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.form input[type='text1']{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    width: 150%;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.btn-group label{
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid rgb(56, 85, 95);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 18px 0;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red)
+    ) ;
+    border: none;
+}
+
+#citation{
+    margin: 90px;
+}
+
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-texte{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#citation .citation-auteur{
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: radjhani;
+}
+
+#citation .guillemet-close{
+    float: right;
+}
+
+footer{
+    margin-top: 162px;
+}
+
+footer .texte-footer{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .social-item1{
+    padding: 5px;
+}
+
+footer .social-item{
+    padding: 15px;
+}
+
+ .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+    
+    
+}
+
+
+
+
+
+
