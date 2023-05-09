@@ -9,6 +9,8 @@
 @font-face {
     font-family: Rajdhani;
     src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face{
     font-family: SpaceGrotesk;
     src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
     }
@@ -33,8 +35,37 @@ body{
     font-size: 22px;
 }
 
+body {
+    background-image: url(assets/images/illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-position: ;
 
+}
 
+.up-bar{
+    position: absolute;
+    border: 3px solid #BCBBBD;
+    border-bottom: none;
+    left: 102px;
+    right: 102px;
+    top: 132px;
+    height: 7400px;
+    z-index: -1;
+    opacity: 20%;
+
+}
+
+.left-bar{
+    position: absolute;
+    border: 3px solid #BCBBBD;
+    border-bottom: none;
+    border-top: none;
+    left: 102px;
+    right: 102px;
+    top: 0;
+    height: 132px;
+    opacity: 20%;
+}
 
 nav{
     display: flex;
@@ -42,15 +73,16 @@ nav{
     justify-content: space-between;
     position: fixed;
     padding: 50px 0 10px 150px;
+    top: -8px;
        
 }
 
 nav ul li a{
     color: var(--white-color);
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bold;
-    font-family: SpaceGrotesk;
-    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+    font-family: Rajdhani;
+    src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
 
 }
 li{
@@ -65,9 +97,26 @@ nav ul a:hover{
     filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
 }
 
+.scroll .logo-bat1:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .logo-bat2:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+.scroll .social:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
+}
+
+
 .texte{
     text-align: center;
     line-height: 30px;
+    font-size: 20px;
     margin: 0 auto;
     width: 60%;
     padding-top: 150px;
@@ -78,7 +127,7 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 45px;
+    right: 50px;
     top: 300px;
 }
 
@@ -91,25 +140,18 @@ nav ul a:hover{
     margin: 0 auto;
     text-align: center;
     font-size: 25px;
-    padding: 20px;
+    padding: 15px;
     width: 60%;
 }
 
  .flèche{
     display: block;
     margin: 0 auto;
-
+    padding-top: 250px;
     
 }
 
-#hero{
-    background-image: url(./assets/images/illustrations/Bathome1.png);
-    height: 800px;
-    width: 100%;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .container{
     margin: 0 auto;
@@ -138,6 +180,11 @@ nav ul a:hover{
     box-shadow: var(--black-color) 15px 15px 80px;
 
 }
+
+.btn:hover{
+    background: linear-gradient(80deg var(--gradient-red),var(--gradient-white));
+}
+
 .cta{
     display: flex;
     justify-content: space-between;
@@ -150,34 +197,35 @@ nav ul a:hover{
     display: flex;
     justify-content: space-between;
     border-color: rgb(54, 54, 97);
-    padding-right: 55px;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 0;
     }
 
+.Bathome:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 2px #fff;
+}    
+
 .sous-titres {
-        font-size: 19px;
-        text-align: center;
-        font-weight: bold;
+        
         padding-top: 10px;
     }
 
-#batman-cinema{
-    padding-top: 60px;
-}
-
-#batman-cinema, #némésis, #alliés, #justice-league, #multimedia{
+#batman-cinema, #némésis, #alliés, #multimedia{
     margin-top: 40px;
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 #batman-cinema .titre, #némésis .titre, #alliés .titre, #justice-league .titre, #multimedia .titre{
     text-transform: uppercase;
-    margin: 30px auto;
-}
-
-h1 .titre{
     font-family: Rajdhani;
     src: url(./assets/fonts/Rajdhani/Rajdhani-Medium.ttf);
-    font-weight: 400;
     font-size: 36px;
+    font-weight: bold;
+    margin: 30px auto;
 }
 
 #batman-cinema .description, #némésis .description, #alliés .description, #justice-league .description{
@@ -186,7 +234,7 @@ h1 .titre{
     padding-bottom: 25px;
     text-align: justify;
     font-family: SpaceGrotesk;
-    width: 80%;
+    width: 90%;
     font-weight: bold;
     font-size: 19px;
     line-height: 26px;
@@ -208,7 +256,7 @@ h1 .titre{
 .Bathome12 {
     position: absolute;
     right: 0;
-    top: 2650px;
+    top: 2590px;
     z-index: -1;
 
 }
@@ -394,10 +442,13 @@ input[type='submit']{
 
 #citation .citation-auteur{
     padding-top: 20px;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: radjhani;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;    
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
+
 
 #citation .guillemet-close{
     float: right;
@@ -426,13 +477,11 @@ footer .social-item{
     padding: 15px;
 }
 
- .flèche{
-    display: block;
-    margin: 0 auto;
-    margin-top: 200px;
-    
-    
+.social-footer .social-item:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ;
+
 }
+
 
 
 
